@@ -1,0 +1,230 @@
+body{
+  font-family: Dancing Script;
+  background-color: #02010a;
+  width: 900px;
+  margin: auto;
+}
+
+#contenido{
+  width: 900px;
+}
+
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+
+header h1{
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  padding: 1% 1% 1% 3%;
+  width: 100%;
+}
+
+h2{
+  padding: 0% 1% 1% 1%;
+}
+
+header nav{
+  width: 100%;
+  background-color: #5b7989;
+  padding: 5% 2% 1% 1%;
+  border-radius: 10px 10px 0 0;
+  text-align: right;
+  text-decoration: none;
+}
+
+
+
+#cajaimg{
+  background-color: #82c3a6;
+
+}
+
+#imagenppal img{
+  width: 50%;
+  margin: auto;
+  padding: 3% 45% 2% 25%;
+
+}
+
+#cajaimg2{
+  background-color: #d5c75f;
+  width: 50%;
+  text-align: center;
+}
+
+#imagen2 img{
+    border: 2px 2px 2px 2px;
+    width: 70%;
+    margin: auto;
+    padding: 5% 5% 0% 5%;
+    order: 1;
+    animation-name: rotacion;
+}
+
+#imagen2B img{
+    border: 2px 2px 2px 2px;
+    width: 70%;
+    margin: auto;
+    padding: 5% 5% 0% 5%;
+    order: 1;
+    animation-name: rotacion;
+}
+
+@keyframes rotacion {
+  0% {
+      right: 0%;
+      transform: rotate(0deg);
+     }
+  50% {
+      right: 50%;
+      transform: rotate(10deg);
+     }
+  100% {
+         left: 100%;
+         transform: rotate(0deg);
+        }
+}
+
+
+ #imagen2 img:hover{
+  width: 70%;
+  animation-name: rotacion;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotacion;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: rotacion;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: rotacion;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+  -o-animation-iteration-count: infinite;
+  box-shadow: 2px 2px 2px 2px  #82c3a6;
+}
+
+#cajaimg3{
+  background-color: #d5c75f;
+  width: 50%;
+  text-align: center;
+}
+
+#imagen3 img{
+    width: 70%;
+    margin: auto;
+    padding: 5% 5% 0% 5%;
+    order: 2;
+}
+
+#imagen3B img{
+    width: 70%;
+    margin: auto;
+    padding: 5% 5% 0% 5%;
+    order: 2;
+}
+
+#imagen3 img:hover{
+    box-shadow: 2px 2px 2px 2px #82c3a6;
+    -webkit-transform: translate(5px, -20px);
+    transform: translate(5px, -20px);
+}
+
+#wrapper{
+  margin: auto;
+  border: 11% 1% 1% 1%;
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+}
+
+.i1 img{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+
+}
+
+.i2 img, .i4 img, .i6 img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.i3 img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+footer{
+  display: inline-flex;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+
+#contactenos {
+  width: 20%;
+  padding: 1%;
+}
+
+#terminos {
+  width:30%;
+  padding: 1%;
+}
+
+#redes {
+  width: 25%;
+  padding: 1%;
+}
+
+#derechos {
+  width: 25%;
+  padding: 1%;
+}
+
+#contenido{
+  align-content: center;
+  width: 900px
+}
+
+@media screen and (min-width:901px) {
+  #contenido{
+    width: 900px;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  #contenido{
+    width: 100%;
+  }
+  #wrapper{
+    width: 100%;
+  }
+  body header h1 {
+    width: 100%;
+    margin:0 auto;
+  }
+
+  body header nav a {
+    width: 100%;
+    margin:0 auto;
+  }
+  #cajaimg{
+    width: 100%;
+  }
+  #cajaimg2{
+    width: 100%;
+  }
+  #cajaimg3{
+    width: 100%;
+  }
+}
